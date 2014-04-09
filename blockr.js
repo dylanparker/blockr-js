@@ -121,8 +121,13 @@ var Blockr = (function() {
       balance     : createAddressFunc("/balance/", true),
       txs         : createAddressFunc("/txs/", false),
       unspent     : createAddressFunc("/unspent/", false),
-      unconfirmed : createAddressFunc("/info/", false)
+      unconfirmed : createAddressFunc("/unconfirmed/", false)
     },
     
   };
 })();
+
+
+Blockr.Blockr.coin.info(function(o) {
+    console.log(o);
+});
