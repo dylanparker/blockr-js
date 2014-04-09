@@ -168,18 +168,22 @@ You can request data for multiple addresses by including multiple public address
 
 Retrieves general info about a specific public address.
 
+The `opt_confs` parameter will filter any transactions with less than `opt_confs` confirmations. The maximum value for `opt_confs` is 15.
+
 	Blockr.address.info(address, function(o) {
 		console.log( o.data.totalreceived );	  // console displays "123.001337"
-	});
+	}, confirmations);
 
 <br />
 **`Blockr.address.balance( address, callback, opt_confs )`**
 
 Retrieves the balance for a specific public address.
 
+The `opt_confs` parameter will filter any transactions with less than `opt_confs` confirmations. The maximum value for `opt_confs` is 15.
+
 	Blockr.address.balance(address, function(o) {
 		console.log( o.data.balance );	  // console displays "123.001337"
-	});
+	}, confirmations);
 
 <br />
 **`Blockr.address.txs( address, callback )`**
