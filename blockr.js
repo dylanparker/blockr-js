@@ -3,7 +3,7 @@
 
 var Blockr = (function() {
   // Different coin info is retrieved via different subdomains
-  var COIN_SUBDOMAINS = [ "btc", "btct", "ltc", "dgc", "qrk", "ppc", "mec" ];
+  var COIN_SUBDOMAINS = [ "btc", "tbtc", "ltc", "dgc", "qrk", "ppc", "mec" ];
   
   // Used to construct query urls for v1 of the API
   var V1_URL_FRAGMENT = ".blockr.io/api/v1";

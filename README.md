@@ -29,7 +29,7 @@ Select the coin to query for by specifying the associated subdomain.
 The default is bitcoin (btc).
 
 	Blockr.setCoinSubdomain("btc");	// Bitcoin
-	Blockr.setCoinSubdomain("btct"); // Bitcoin (Testnet)
+	Blockr.setCoinSubdomain("tbtc"); // Bitcoin (Testnet)
 	Blockr.setCoinSubdomain("ltc"); // litecoin
 	Blockr.setCoinSubdomain("dgc"); // Digitalcoin
 	Blockr.setCoinSubdomain("qrk"); // Quark
